@@ -1,6 +1,7 @@
 # bom
 
-> A **Super BOM** aligned with both [Quarkus](https://quarkus.io/) and [Spring Boot](https://spring.io/projects/spring-boot) BOMs — pick a single set of third‑party versions that works with either framework.
+> A **Super BOM** aligned with both [Quarkus](https://quarkus.io/) and [Spring Boot](https://spring.io/projects/spring-boot) BOMs — pick a single set of third‑party versions that works with either framework
+> to be used with all [fuin.org](https://github.com/fuinorg/) libraries.
 
 [![Java Maven Build](https://github.com/fuinorg/bom/actions/workflows/maven.yml/badge.svg)](https://github.com/fuinorg/bom/actions/workflows/maven.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/org.fuin/bom.svg)](https://central.sonatype.com/artifact/org.fuin/bom)
