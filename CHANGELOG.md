@@ -1,6 +1,7 @@
 # Release Notes
 
 ## 1.0.1
+- Reduced BOM to libraries really used in [fuin.org](https://github.com/fuinorg/) projects.
 - Fixed wrong version identifiers.
 
 ## 1.0.0
