@@ -2,6 +2,7 @@
 
 ## 1.0.2
 - Added JSpecify
+- Verify no SNAPSHOTS either in plugin sections or dependencies when release
 
 ## 1.0.1
 - Reduced BOM to libraries really used in [fuin.org](https://github.com/fuinorg/) projects.

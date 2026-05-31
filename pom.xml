@@ -729,6 +729,41 @@
                 </configuration>
             </plugin>
 
+            <!-- Fails the build if a released version (non-SNAPSHOT) references SNAPSHOT
+                 dependencies (in dependencyManagement) or SNAPSHOT plugins. The check is
+                 inert while the project itself is a SNAPSHOT, so development is unaffected.
+                 Version is inherited from the parent POM. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>enforce-no-snapshots-on-release</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <evaluateBeanshell>
+                                    <message>A release version must not reference SNAPSHOT dependencies or plugins.</message>
+                                    <condition>
+                                        String v = "${project.version}";
+                                        String dm = "${project.dependencyManagement.dependencies}";
+                                        String pa = "${project.pluginArtifacts}";
+                                        boolean release = !v.endsWith("SNAPSHOT");
+                                        boolean snapDeps = dm.contains("-SNAPSHOT");
+                                        boolean snapPlugins = pa.contains("-SNAPSHOT");
+                                        if (release &amp;&amp; snapDeps) print("[enforcer] SNAPSHOT in dependencyManagement: " + dm);
+                                        if (release &amp;&amp; snapPlugins) print("[enforcer] SNAPSHOT plugin: " + pa);
+                                        !release || (!snapDeps &amp;&amp; !snapPlugins);
+                                    </condition>
+                                </evaluateBeanshell>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
 
     </build>
