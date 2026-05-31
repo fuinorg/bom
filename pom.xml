@@ -725,6 +725,7 @@
                     </includes>
                     <fixedVersions>
                         <fixedVersion>jakarta.annotation:jakarta.annotation-api:3.0.0</fixedVersion>
+                        <fixedVersion>org.eclipse.persistence:org.eclipse.persistence.jpa:4.0.9</fixedVersion>
                     </fixedVersions>
                 </configuration>
             </plugin>

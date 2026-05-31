@@ -3,6 +3,7 @@
 ## 1.0.2
 - Added JSpecify
 - Verify no SNAPSHOTS either in plugin sections or dependencies when release
+- Use lower "org.eclipse.persistence.jpa" implementation as it didn't fit the API defined.
 
 ## 1.0.1
 - Reduced BOM to libraries really used in [fuin.org](https://github.com/fuinorg/) projects.
