@@ -487,6 +487,13 @@
                 <version>0.9.15</version>
             </dependency>
 
+            <!-- spring-boot-dependencies=1.0.0 -->
+            <dependency>
+                <groupId>org.jspecify</groupId>
+                <artifactId>jspecify</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
             <!-- quarkus-bom=5.12.2, spring-boot-dependencies=5.12.2 -->
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
@@ -696,6 +703,7 @@
                         <include>org.hsqldb:hsqldb</include>
                         <include>org.jboss.logging:jboss-logging</include>
                         <include>org.jboss.weld.se:weld-se-core</include>
+                        <include>org.jspecify:jspecify</include>
                         <include>org.jooq:joor</include>
                         <include>org.junit.jupiter:junit-jupiter</include>
                         <include>org.junit.jupiter:junit-jupiter-engine</include>

@@ -1,7 +1,7 @@
 # Release Notes
 
 ## 1.0.2
-- TBD
+- Added JSpecify
 
 ## 1.0.1
 - Reduced BOM to libraries really used in [fuin.org](https://github.com/fuinorg/) projects.
