@@ -357,6 +357,13 @@
             <!-- Not in framework BOM -->
             <dependency>
                 <groupId>net.javacrumbs.json-unit</groupId>
+                <artifactId>json-unit-assertj</artifactId>
+                <version>4.1.1</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>net.javacrumbs.json-unit</groupId>
                 <artifactId>json-unit-fluent</artifactId>
                 <version>4.1.1</version>
             </dependency>
@@ -396,6 +403,13 @@
                 <version>3.27.7</version>
             </dependency>
 
+            <!-- quarkus-bom=4.3.0, spring-boot-dependencies=4.2.2 -->
+            <dependency>
+                <groupId>org.awaitility</groupId>
+                <artifactId>awaitility</artifactId>
+                <version>4.3.0</version>
+            </dependency>
+
             <!-- quarkus-bom=3.0.4, spring-boot-dependencies=3.0.4 -->
             <dependency>
                 <groupId>org.eclipse</groupId>
@@ -421,7 +435,7 @@
             <dependency>
                 <groupId>org.eclipse.persistence</groupId>
                 <artifactId>org.eclipse.persistence.jpa</artifactId>
-                <version>5.0.0</version>
+                <version>4.0.9</version>
             </dependency>
 
             <!-- Not in framework BOM -->
@@ -685,12 +699,14 @@
                         <include>jakarta.transaction:jakarta.transaction-api</include>
                         <include>jakarta.validation:jakarta.validation-api</include>
                         <include>jakarta.xml.bind:jakarta.xml.bind-api</include>
+                        <include>net.javacrumbs.json-unit:json-unit-assertj</include>
                         <include>net.javacrumbs.json-unit:json-unit-fluent</include>
                         <include>nl.jqno.equalsverifier:equalsverifier</include>
                         <include>org.apache.commons:commons-lang3</include>
                         <include>org.apache.httpcomponents:httpclient</include>
                         <include>org.apache.velocity:velocity-engine-core</include>
                         <include>org.assertj:assertj-core</include>
+                        <include>org.awaitility:awaitility</include>
                         <include>org.eclipse.microprofile.config:microprofile-config-api</include>
                         <include>org.eclipse.microprofile.openapi:microprofile-openapi-api</include>
                         <include>org.eclipse.persistence:org.eclipse.persistence.jpa</include>
@@ -726,6 +742,7 @@
                     <fixedVersions>
                         <fixedVersion>jakarta.annotation:jakarta.annotation-api:3.0.0</fixedVersion>
                         <fixedVersion>org.eclipse.persistence:org.eclipse.persistence.jpa:4.0.9</fixedVersion>
+                        <fixedVersion>net.javacrumbs.json-unit:json-unit-assertj:4.1.1</fixedVersion>
                     </fixedVersions>
                 </configuration>
             </plugin>
