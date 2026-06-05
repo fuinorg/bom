@@ -526,14 +526,14 @@
             <dependency>
                 <groupId>org.junit.platform</groupId>
                 <artifactId>junit-platform-suite-api</artifactId>
-                <version>1.12.2</version>
+                <version>1.14.4</version>
             </dependency>
 
             <!-- quarkus-bom=1.12.2, spring-boot-dependencies=1.12.2 -->
             <dependency>
                 <groupId>org.junit.platform</groupId>
                 <artifactId>junit-platform-suite-engine</artifactId>
-                <version>1.12.2</version>
+                <version>1.14.4</version>
             </dependency>
 
             <!-- quarkus-bom=3.5.3, spring-boot-dependencies=3.5.8 -->
@@ -741,8 +741,10 @@
                     </includes>
                     <fixedVersions>
                         <fixedVersion>jakarta.annotation:jakarta.annotation-api:3.0.0</fixedVersion>
-                        <fixedVersion>org.eclipse.persistence:org.eclipse.persistence.jpa:4.0.9</fixedVersion>
                         <fixedVersion>net.javacrumbs.json-unit:json-unit-assertj:4.1.1</fixedVersion>
+                        <fixedVersion>org.eclipse.persistence:org.eclipse.persistence.jpa:4.0.9</fixedVersion>
+                        <fixedVersion>org.junit.platform:junit-platform-suite-api:1.14.4</fixedVersion>
+                        <fixedVersion>org.junit.platform:junit-platform-suite-engine:1.14.4</fixedVersion>
                     </fixedVersions>
                 </configuration>
             </plugin>
