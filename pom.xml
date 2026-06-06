@@ -132,6 +132,13 @@
 
             <!-- Not in framework BOM -->
             <dependency>
+                <groupId>com.openpojo</groupId>
+                <artifactId>openpojo</artifactId>
+                <version>0.9.1</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
                 <groupId>com.sun.mail</groupId>
                 <artifactId>jakarta.mail</artifactId>
                 <version>2.0.2</version>
@@ -191,6 +198,13 @@
                 <groupId>io.cucumber</groupId>
                 <artifactId>cucumber-spring</artifactId>
                 <version>7.34.3</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>io.github.classgraph</groupId>
+                <artifactId>classgraph</artifactId>
+                <version>4.8.184</version>
             </dependency>
 
             <!-- Not in framework BOM -->
@@ -718,6 +732,7 @@
                         <include>com.google.guava:guava</include>
                         <include>commons-codec:commons-codec</include>
                         <include>commons-io:commons-io</include>
+                        <include>com.openpojo:openpojo</include>
                         <include>com.sun.mail:jakarta.mail</include>
                         <include>com.tngtech.archunit:archunit</include>
                         <include>com.tngtech.archunit:archunit-junit5</include>
@@ -725,7 +740,7 @@
                         <include>io.cucumber:cucumber-java</include>
                         <include>io.cucumber:cucumber-junit-platform-engine</include>
                         <include>io.cucumber:cucumber-spring</include>
-                        <include>io.github.classgraph:classgraph:4.8.184</include>
+                        <include>io.github.classgraph:classgraph</include>
                         <include>io.github.threeten-jaxb:threeten-jaxb-core</include>
                         <include>io.grpc:grpc-api</include>
                         <include>io.kurrent:kurrentdb-client</include>
