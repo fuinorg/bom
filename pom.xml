@@ -130,6 +130,20 @@
                 <version>33.4.8-jre</version>
             </dependency>
 
+            <!-- quarkus-bom=3.25.5 -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>4.28.2</version>
+            </dependency>
+
+            <!-- quarkus-bom=3.25.5 -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java-util</artifactId>
+                <version>4.28.2</version>
+            </dependency>
+
             <!-- Not in framework BOM -->
             <dependency>
                 <groupId>com.openpojo</groupId>
@@ -737,6 +751,8 @@
                         <include>com.google.code.gson:gson</include>
                         <include>com.google.googlejavaformat:google-java-format</include>
                         <include>com.google.guava:guava</include>
+                        <include>com.google.protobuf:protobuf-java</include>
+                        <include>com.google.protobuf:protobuf-java-util</include>
                         <include>commons-codec:commons-codec</include>
                         <include>commons-io:commons-io</include>
                         <include>com.openpojo:openpojo</include>
@@ -820,6 +836,11 @@
                         <include>org.xmlunit:xmlunit-assertj3</include>
                     </includes>
                     <fixedVersions>
+                        <!-- kurrentdb-client generates its stubs against protobuf 4.28.2
+                             (needs com.google.protobuf.RuntimeVersion). The framework BOMs
+                             pin 3.25.x, which makes gRPC calls hang instead of fail. -->
+                        <fixedVersion>com.google.protobuf:protobuf-java:4.28.2</fixedVersion>
+                        <fixedVersion>com.google.protobuf:protobuf-java-util:4.28.2</fixedVersion>
                         <fixedVersion>io.grpc:grpc-api:1.75.0</fixedVersion>
                         <fixedVersion>jakarta.annotation:jakarta.annotation-api:3.0.0</fixedVersion>
                         <fixedVersion>net.javacrumbs.json-unit:json-unit-assertj:4.1.1</fixedVersion>
