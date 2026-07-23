@@ -256,6 +256,13 @@
                 <version>2.4.0</version>
             </dependency>
 
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-bulkhead</artifactId>
+                <version>2.4.0</version>
+            </dependency>
+
             <!-- quarkus-bom=3.23.4 -->
             <dependency>
                 <groupId>io.quarkus</groupId>
@@ -780,6 +787,7 @@
                         <include>io.github.classgraph:classgraph</include>
                         <include>io.github.threeten-jaxb:threeten-jaxb-core</include>
                         <include>io.grpc:grpc-api</include>
+                        <include>io.github.resilience4j:resilience4j-bulkhead</include>
                         <include>io.github.resilience4j:resilience4j-circuitbreaker</include>
                         <include>io.github.resilience4j:resilience4j-core</include>
                         <include>io.kurrent:kurrentdb-client</include>
