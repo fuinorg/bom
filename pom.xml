@@ -424,6 +424,20 @@
                 <version>4.0.4</version>
             </dependency>
 
+            <!-- quarkus-bom=1.15.11, spring-boot-dependencies=1.17.8 -->
+            <dependency>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy</artifactId>
+                <version>1.17.8</version>
+            </dependency>
+
+            <!-- spring-boot-dependencies=1.17.8 -->
+            <dependency>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy-agent</artifactId>
+                <version>1.17.8</version>
+            </dependency>
+
             <!-- Not in framework BOM -->
             <dependency>
                 <groupId>net.javacrumbs.json-unit</groupId>
@@ -814,6 +828,14 @@
                         <include>jakarta.transaction:jakarta.transaction-api</include>
                         <include>jakarta.validation:jakarta.validation-api</include>
                         <include>jakarta.xml.bind:jakarta.xml.bind-api</include>
+                        <!-- Byte Buddy only supports the Java 25 class file format (major 69) from
+                             1.17.5 on. quarkus-bom still manages 1.15.11, which aborts Hibernate
+                             enhancement / the Quarkus build augmentation on JDK 25 unless the
+                             net.bytebuddy.experimental flag is set. The HIGHEST strategy picks the
+                             1.17.8 managed by spring-boot-dependencies, which removes the need for
+                             that workaround - never let this drop below 1.17.5. -->
+                        <include>net.bytebuddy:byte-buddy</include>
+                        <include>net.bytebuddy:byte-buddy-agent</include>
                         <include>net.javacrumbs.json-unit:json-unit-assertj</include>
                         <include>net.javacrumbs.json-unit:json-unit-fluent</include>
                         <include>nl.jqno.equalsverifier:equalsverifier</include>

@@ -1,6 +1,7 @@
 # Release Notes
 
 ## 1.0.2
+- Added Byte Buddy 1.17.8 (first version supporting the Java 25 class file format is 1.17.5, quarkus-bom still manages 1.15.11)
 - Added JSpecify and Nullaway
 - Verify no SNAPSHOTS either in plugin sections or dependencies when release
 - Use lower "org.eclipse.persistence.jpa" implementation as it didn't fit the API defined.
