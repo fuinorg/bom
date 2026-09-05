@@ -12,7 +12,7 @@
 
     <artifactId>bom</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>Super BOM for fuin.org projects</name>
     <url>https://github.com/fuinorg/bom/</url>
     <description>Super BOM that is aligned with Quarkus and Spring Boot BOMs.</description>
@@ -83,6 +83,13 @@
 
             <!-- Not in framework BOM -->
             <dependency>
+                <groupId>com.github.dasniko</groupId>
+                <artifactId>testcontainers-keycloak</artifactId>
+                <version>4.2.1</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
                 <groupId>com.google.auto.service</groupId>
                 <artifactId>auto-service</artifactId>
                 <version>1.1.1</version>
@@ -93,6 +100,13 @@
                 <groupId>com.google.auto.service</groupId>
                 <artifactId>auto-service-annotations</artifactId>
                 <version>1.1.1</version>
+            </dependency>
+
+            <!-- quarkus-bom=3.0.2 -->
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>3.0.2</version>
             </dependency>
 
             <!-- quarkus-bom=2.13.1, spring-boot-dependencies=2.13.2 -->
@@ -114,6 +128,27 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>33.4.8-jre</version>
+            </dependency>
+
+            <!-- quarkus-bom=3.25.5 -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>4.28.2</version>
+            </dependency>
+
+            <!-- quarkus-bom=3.25.5 -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java-util</artifactId>
+                <version>4.28.2</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>com.openpojo</groupId>
+                <artifactId>openpojo</artifactId>
+                <version>0.9.1</version>
             </dependency>
 
             <!-- Not in framework BOM -->
@@ -174,6 +209,20 @@
 
             <!-- Not in framework BOM -->
             <dependency>
+                <groupId>io.cucumber</groupId>
+                <artifactId>cucumber-spring</artifactId>
+                <version>7.34.3</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>io.github.classgraph</groupId>
+                <artifactId>classgraph</artifactId>
+                <version>4.8.184</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
                 <groupId>io.github.threeten-jaxb</groupId>
                 <artifactId>threeten-jaxb-core</artifactId>
                 <version>2.2.0</version>
@@ -183,7 +232,7 @@
             <dependency>
                 <groupId>io.grpc</groupId>
                 <artifactId>grpc-api</artifactId>
-                <version>1.69.1</version>
+                <version>1.75.0</version>
             </dependency>
 
             <!-- Not in framework BOM -->
@@ -191,6 +240,27 @@
                 <groupId>io.kurrent</groupId>
                 <artifactId>kurrentdb-client</artifactId>
                 <version>1.2.0</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-circuitbreaker</artifactId>
+                <version>2.4.0</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-core</artifactId>
+                <version>2.4.0</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-bulkhead</artifactId>
+                <version>2.4.0</version>
             </dependency>
 
             <!-- quarkus-bom=3.23.4 -->
@@ -354,6 +424,27 @@
                 <version>4.0.4</version>
             </dependency>
 
+            <!-- quarkus-bom=1.15.11, spring-boot-dependencies=1.17.8 -->
+            <dependency>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy</artifactId>
+                <version>1.17.8</version>
+            </dependency>
+
+            <!-- spring-boot-dependencies=1.17.8 -->
+            <dependency>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy-agent</artifactId>
+                <version>1.17.8</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>net.javacrumbs.json-unit</groupId>
+                <artifactId>json-unit-assertj</artifactId>
+                <version>4.1.1</version>
+            </dependency>
+
             <!-- Not in framework BOM -->
             <dependency>
                 <groupId>net.javacrumbs.json-unit</groupId>
@@ -396,6 +487,13 @@
                 <version>3.27.7</version>
             </dependency>
 
+            <!-- quarkus-bom=4.3.0, spring-boot-dependencies=4.2.2 -->
+            <dependency>
+                <groupId>org.awaitility</groupId>
+                <artifactId>awaitility</artifactId>
+                <version>4.3.0</version>
+            </dependency>
+
             <!-- quarkus-bom=3.0.4, spring-boot-dependencies=3.0.4 -->
             <dependency>
                 <groupId>org.eclipse</groupId>
@@ -421,7 +519,7 @@
             <dependency>
                 <groupId>org.eclipse.persistence</groupId>
                 <artifactId>org.eclipse.persistence.jpa</artifactId>
-                <version>5.0.0</version>
+                <version>4.0.9</version>
             </dependency>
 
             <!-- Not in framework BOM -->
@@ -473,6 +571,13 @@
                 <version>3.6.3.Final</version>
             </dependency>
 
+            <!-- quarkus-bom=6.2.12.Final -->
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-client</artifactId>
+                <version>6.2.12.Final</version>
+            </dependency>
+
             <!-- Not in framework BOM -->
             <dependency>
                 <groupId>org.jboss.weld.se</groupId>
@@ -485,6 +590,13 @@
                 <groupId>org.jooq</groupId>
                 <artifactId>joor</artifactId>
                 <version>0.9.15</version>
+            </dependency>
+
+            <!-- spring-boot-dependencies=1.0.0 -->
+            <dependency>
+                <groupId>org.jspecify</groupId>
+                <artifactId>jspecify</artifactId>
+                <version>1.0.0</version>
             </dependency>
 
             <!-- quarkus-bom=5.12.2, spring-boot-dependencies=5.12.2 -->
@@ -505,14 +617,21 @@
             <dependency>
                 <groupId>org.junit.platform</groupId>
                 <artifactId>junit-platform-suite-api</artifactId>
-                <version>1.12.2</version>
+                <version>1.14.4</version>
             </dependency>
 
             <!-- quarkus-bom=1.12.2, spring-boot-dependencies=1.12.2 -->
             <dependency>
                 <groupId>org.junit.platform</groupId>
                 <artifactId>junit-platform-suite-engine</artifactId>
-                <version>1.12.2</version>
+                <version>1.14.4</version>
+            </dependency>
+
+            <!-- quarkus-bom=26.0.5 -->
+            <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-admin-client</artifactId>
+                <version>26.0.5</version>
             </dependency>
 
             <!-- quarkus-bom=3.5.3, spring-boot-dependencies=3.5.8 -->
@@ -599,6 +718,27 @@
                 <version>1.21.4</version>
             </dependency>
 
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>bootstrap</artifactId>
+                <version>5.3.8</version>
+            </dependency>
+
+            <!-- Not in framework BOM -->
+            <dependency>
+                <groupId>org.webjars.npm</groupId>
+                <artifactId>keycloak-js</artifactId>
+                <version>26.2.3</version>
+            </dependency>
+
+            <!-- spring-boot-dependencies=2.10.4 -->
+            <dependency>
+                <groupId>org.xmlunit</groupId>
+                <artifactId>xmlunit-assertj3</artifactId>
+                <version>2.10.4</version>
+            </dependency>
+
             <!-- spring-boot-dependencies=2.10.4 -->
             <dependency>
                 <groupId>org.xmlunit</groupId>
@@ -639,21 +779,31 @@
                         <include>com.fasterxml.jackson.core:jackson-core</include>
                         <include>com.fasterxml.jackson.core:jackson-databind</include>
                         <include>com.fasterxml.jackson.datatype:jackson-datatype-jsr310</include>
+                        <include>com.github.dasniko:testcontainers-keycloak</include>
                         <include>com.google.auto.service:auto-service</include>
                         <include>com.google.auto.service:auto-service-annotations</include>
+                        <include>com.google.code.findbugs:jsr305</include>
                         <include>com.google.code.gson:gson</include>
                         <include>com.google.googlejavaformat:google-java-format</include>
                         <include>com.google.guava:guava</include>
+                        <include>com.google.protobuf:protobuf-java</include>
+                        <include>com.google.protobuf:protobuf-java-util</include>
                         <include>commons-codec:commons-codec</include>
                         <include>commons-io:commons-io</include>
+                        <include>com.openpojo:openpojo</include>
                         <include>com.sun.mail:jakarta.mail</include>
                         <include>com.tngtech.archunit:archunit</include>
                         <include>com.tngtech.archunit:archunit-junit5</include>
                         <include>info.cukes:gherkin</include>
                         <include>io.cucumber:cucumber-java</include>
                         <include>io.cucumber:cucumber-junit-platform-engine</include>
+                        <include>io.cucumber:cucumber-spring</include>
+                        <include>io.github.classgraph:classgraph</include>
                         <include>io.github.threeten-jaxb:threeten-jaxb-core</include>
                         <include>io.grpc:grpc-api</include>
+                        <include>io.github.resilience4j:resilience4j-bulkhead</include>
+                        <include>io.github.resilience4j:resilience4j-circuitbreaker</include>
+                        <include>io.github.resilience4j:resilience4j-core</include>
                         <include>io.kurrent:kurrentdb-client</include>
                         <include>io.quarkus.arc:arc</include>
                         <include>io.quarkus:quarkus-core</include>
@@ -678,12 +828,22 @@
                         <include>jakarta.transaction:jakarta.transaction-api</include>
                         <include>jakarta.validation:jakarta.validation-api</include>
                         <include>jakarta.xml.bind:jakarta.xml.bind-api</include>
+                        <!-- Byte Buddy only supports the Java 25 class file format (major 69) from
+                             1.17.5 on. quarkus-bom still manages 1.15.11, which aborts Hibernate
+                             enhancement / the Quarkus build augmentation on JDK 25 unless the
+                             net.bytebuddy.experimental flag is set. The HIGHEST strategy picks the
+                             1.17.8 managed by spring-boot-dependencies, which removes the need for
+                             that workaround - never let this drop below 1.17.5. -->
+                        <include>net.bytebuddy:byte-buddy</include>
+                        <include>net.bytebuddy:byte-buddy-agent</include>
+                        <include>net.javacrumbs.json-unit:json-unit-assertj</include>
                         <include>net.javacrumbs.json-unit:json-unit-fluent</include>
                         <include>nl.jqno.equalsverifier:equalsverifier</include>
                         <include>org.apache.commons:commons-lang3</include>
                         <include>org.apache.httpcomponents:httpclient</include>
                         <include>org.apache.velocity:velocity-engine-core</include>
                         <include>org.assertj:assertj-core</include>
+                        <include>org.awaitility:awaitility</include>
                         <include>org.eclipse.microprofile.config:microprofile-config-api</include>
                         <include>org.eclipse.microprofile.openapi:microprofile-openapi-api</include>
                         <include>org.eclipse.persistence:org.eclipse.persistence.jpa</include>
@@ -695,12 +855,15 @@
                         <include>org.hibernate.validator:hibernate-validator</include>
                         <include>org.hsqldb:hsqldb</include>
                         <include>org.jboss.logging:jboss-logging</include>
+                        <include>org.jboss.resteasy:resteasy-client</include>
                         <include>org.jboss.weld.se:weld-se-core</include>
+                        <include>org.jspecify:jspecify</include>
                         <include>org.jooq:joor</include>
                         <include>org.junit.jupiter:junit-jupiter</include>
                         <include>org.junit.jupiter:junit-jupiter-engine</include>
                         <include>org.junit.platform:junit-platform-suite-api</include>
                         <include>org.junit.platform:junit-platform-suite-engine</include>
+                        <include>org.keycloak:keycloak-admin-client</include>
                         <include>org.mariadb.jdbc:mariadb-java-client</include>
                         <include>org.mockito:mockito-core</include>
                         <include>org.mockito:mockito-junit-jupiter</include>
@@ -713,12 +876,60 @@
                         <include>org.springframework:spring-orm</include>
                         <include>org.springframework:spring-tx</include>
                         <include>org.testcontainers:mariadb</include>
+                        <include>org.webjars:bootstrap</include>
+                        <include>org.webjars.npm:keycloak-js</include>
                         <include>org.xmlunit:xmlunit-core</include>
+                        <include>org.xmlunit:xmlunit-assertj3</include>
                     </includes>
                     <fixedVersions>
+                        <!-- kurrentdb-client generates its stubs against protobuf 4.28.2
+                             (needs com.google.protobuf.RuntimeVersion). The framework BOMs
+                             pin 3.25.x, which makes gRPC calls hang instead of fail. -->
+                        <fixedVersion>com.google.protobuf:protobuf-java:4.28.2</fixedVersion>
+                        <fixedVersion>com.google.protobuf:protobuf-java-util:4.28.2</fixedVersion>
+                        <fixedVersion>io.grpc:grpc-api:1.75.0</fixedVersion>
                         <fixedVersion>jakarta.annotation:jakarta.annotation-api:3.0.0</fixedVersion>
+                        <fixedVersion>net.javacrumbs.json-unit:json-unit-assertj:4.1.1</fixedVersion>
+                        <fixedVersion>org.eclipse.persistence:org.eclipse.persistence.jpa:4.0.9</fixedVersion>
+                        <fixedVersion>org.junit.platform:junit-platform-suite-api:1.14.4</fixedVersion>
+                        <fixedVersion>org.junit.platform:junit-platform-suite-engine:1.14.4</fixedVersion>
                     </fixedVersions>
                 </configuration>
+            </plugin>
+
+            <!-- Fails the build if a released version (non-SNAPSHOT) references SNAPSHOT
+                 dependencies (in dependencyManagement) or SNAPSHOT plugins. The check is
+                 inert while the project itself is a SNAPSHOT, so development is unaffected.
+                 Version is inherited from the parent POM. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>enforce-no-snapshots-on-release</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <evaluateBeanshell>
+                                    <message>A release version must not reference SNAPSHOT dependencies or plugins.</message>
+                                    <condition>
+                                        String v = "${project.version}";
+                                        String dm = "${project.dependencyManagement.dependencies}";
+                                        String pa = "${project.pluginArtifacts}";
+                                        boolean release = !v.endsWith("SNAPSHOT");
+                                        boolean snapDeps = dm.contains("-SNAPSHOT");
+                                        boolean snapPlugins = pa.contains("-SNAPSHOT");
+                                        if (release &amp;&amp; snapDeps) print("[enforcer] SNAPSHOT in dependencyManagement: " + dm);
+                                        if (release &amp;&amp; snapPlugins) print("[enforcer] SNAPSHOT plugin: " + pa);
+                                        !release || (!snapDeps &amp;&amp; !snapPlugins);
+                                    </condition>
+                                </evaluateBeanshell>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>
