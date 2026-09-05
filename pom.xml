@@ -12,7 +12,7 @@
 
     <artifactId>bom</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <name>Super BOM for fuin.org projects</name>
     <url>https://github.com/fuinorg/bom/</url>
     <description>Super BOM that is aligned with Quarkus and Spring Boot BOMs.</description>
@@ -765,7 +765,7 @@
             <plugin>
                 <groupId>org.fuin.bupdater</groupId>
                 <artifactId>bupdater-maven-plugin</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>1.0.0</version>
                 <configuration>
                     <strategy>HIGHEST</strategy>
                     <frameworks>
